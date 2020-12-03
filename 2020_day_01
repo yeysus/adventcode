@@ -215,18 +215,18 @@ if (DEBUG):
   print ("Array length: ", len(linesArray));
 
 # Convert each array value into an integer.
-desired_array = [int(numeric_string) for numeric_string in linesArray];
+integersArray = [int(numericString) for numericString in linesArray];
 
-nNumbers = len (desired_array);
+nNumbers = len (integersArray);
 i = 0
 KEEPGOING = True
 # Iterating using while loop.
 while ((KEEPGOING) and (i < nNumbers)):
   j = 1
   while j < nNumbers:
-    if (desired_array[i] + desired_array[j] == DESIRED_SUM):
-      print ("Numbers: ", desired_array[i], " ", desired_array[j])
-      print (desired_array[i]," * ", desired_array[j], " = ", desired_array[i]*desired_array[j])
+    if (integersArray[i] + integersArray[j] == DESIRED_SUM):
+      print ("Numbers: ", integersArray[i], " ", integersArray[j])
+      print (integersArray[i]," * ", integersArray[j], " = ", integersArray[i]*integersArray[j])
       KEEPGOING = False
       break
     else:
