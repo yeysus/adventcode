@@ -219,20 +219,20 @@ integersArray = [int(numericString) for numericString in linesArray];
 
 nNumbers = len (integersArray);
 i = 0
-KEEPGOING = True
+keepgoing = True
 # Iterating using while loop.
-while ((KEEPGOING) and (i < nNumbers)):
+while ((keepgoing) and (i < nNumbers)):
   j = 1
   while j < nNumbers:
     if (integersArray[i] + integersArray[j] == DESIRED_SUM):
       print ("Numbers: ", integersArray[i], " ", integersArray[j])
       print (integersArray[i]," * ", integersArray[j], " = ", integersArray[i]*integersArray[j])
-      KEEPGOING = False
+      keepgoing = False
       break
     else:
       j += 1
   i += 1
 
-if (KEEPGOING):
+if (keepgoing):
   print ("No numbers were found satisfying the condition.")
 
